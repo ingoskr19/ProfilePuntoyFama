@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Punto y Fama</string>
+    <string name="title_activity">PUNTO Y FAMA</string>
+    <string name="button_one">Generar Número</string>
+    <string name="profile_open">Ver Perfil</string>
+    <string name="tipo_config">Responder</string>
+    <string name="title2">Menú de Configuración</string>
+    <string name="sincronizar">Sincronizar Mi Cuenta Con </string>
+    <string name="config_title">CONFIGURACION ADICIONAL</string>
+
+    <string-array name="tipo_config">
+        <item></item>
+        <item>Host</item>
+        <item>Puerto</item>
+        <item>TimeOut</item>
+        <item>Digitos</item>
+    </string-array>
+
+    <string-array name="redes">
+        <item>GMAIL</item>
+        <item>FACEBOOK</item>
+        <item>TWITTER</item>
+        <item>INSTAGRAM</item>
+    </string-array>
+    <string name="title_activity_perfil">PerfilActivity</string>
+    <string name="invitaciones">Solo invitaciones de mejores jugadores </string>
+</resources>

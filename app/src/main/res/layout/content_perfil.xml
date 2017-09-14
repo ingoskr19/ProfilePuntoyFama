@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.oskr.curso.curso_0909.PerfilActivity"
+    tools:showIn="@layout/activity_perfil">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorGray"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_weight="0.9"
+            android:src="@mipmap/ic_profile"
+            android:elevation="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:text="\@Oskr19"
+            android:textSize="24dp"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            >
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_wins" />
+
+            <TextView
+                android:id="@+id/profile_activity_wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="32 Victorias"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            >
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_law" />
+
+            <TextView
+                android:id="@+id/profile_activity_laws"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="20 Empates"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            >
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/followings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:fabSize="normal"
+                android:src="@drawable/ic_lost"/>
+
+            <TextView
+                android:id="@+id/profile_activity_losts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="02 Derrotas"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="@string/config_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="@string/invitaciones"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:paddingLeft="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="@string/sincronizar"/>
+        <Spinner
+            android:id="@+id/perfil_activity_redessociales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sincronizar"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:background="@drawable/border_button"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:background="@drawable/button_style_secundary"/>
+    </LinearLayout>
+
+
+</LinearLayout>

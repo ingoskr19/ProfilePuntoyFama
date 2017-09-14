@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oskr.curso.curso_0909.Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/activity2_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipo_config"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:padding="5dp"
+            />
+
+        <Spinner
+            android:drawableLeft="@drawable/ic_responder"
+            android:id="@+id/activity2_spinner_propiedades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity2_tv2"
+            android:padding="5dp"
+        ></Spinner>
+
+        <TextView
+            android:id="@+id/activity2_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity2_spinner_propiedades"
+            android:drawableLeft="@drawable/ic_responder"
+            android:text="Escriba el valor: "
+            android:padding="5dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/tipo_config"
+            android:layout_marginRight="15dp"
+            android:inputType="textPersonName"
+            android:layout_alignBaseline="@+id/activity2_tv3"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/activity2_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title2"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity2_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_multijugador"
+                android:text=" Desea jugar en modo Multijugador?"
+                android:padding="5dp"
+                android:layout_weight="0.9"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:checked="true"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
